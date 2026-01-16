@@ -3,151 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Virginia Nyambura - showcasing web development and SEO skills.">
-  <title>Virginia Nyambura | Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Virginia Nymbura | Web Developer & SEO Portfolio</title>
+  <meta name="description" content="Virginia Nyambura - Web developer and SEO engineer. Explore projects, skills, and contact information.">
+  <meta name="keywords" content="Virginia Nyambura, SEO engineer, Web Developer, Portfolio, Projects, JavaScript, HTML, CSS">
+  <meta name="author" content="Virginia Nyambura">
+
+  <!-- Open Graph (for social media sharing) -->
+  <meta property="og:title" content="Virginia Nyambura | Web Developer & SEO Portfolio">
+  <meta property="og:description" content="Explore Virginia Nyambura's portfolio showcasing responsive websites, SEO projects, and web development skills.">
+  <meta property="og:image" content="https://Virginia portrait /600x315.png?text=Virginia+Nymbura+Portfolio">
+  <meta property="og:url" content="https://<Virginiamwega>.github.io/portfolio/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Virginia Nyambura | Web Developer & SEO Portfolio">
+  <meta name="twitter:description" content="Explore Virginia Nyambura's portfolio showcasing responsive websites, SEO projects, and web development skills.">
+  <meta name="twitter:image" content="https://Virginia portrait/600x315.png?text=Virginia+Nymbura+Portfolio">
+
+  <!-- Styles -->
   <style>
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body { line-height: 1.6; color: #333; }
 
-    /* Header */
-    header {
-      background: #1f2937;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-    }
-    nav ul li {
-      margin-left: 1.5rem;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    header { background: #1f2937; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin-left: 1.5rem; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
     .logo { font-size: 1.5rem; font-weight: bold; }
 
-    /* Hero Section */
-    #hero {
-      background: #4f46e5;
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-    #hero .btn {
-      margin-top: 1rem;
-      background: white;
-      color: #4f46e5;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+    #hero { background: #4f46e5; color: white; padding: 5rem 2rem; text-align: center; }
+    #hero .btn { margin-top: 1rem; background: white; color: #4f46e5; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; font-weight: bold; }
 
-    /* About Section */
-    #about {
-      padding: 4rem 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      text-align: center;
-    }
-    #about img {
-      width: 200px;
-      border-radius: 50%;
-    }
+    #about { padding: 4rem 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; text-align: center; }
+    #about img { width: 200px; border-radius: 50%; }
     .about-content p { max-width: 500px; }
 
-    /* Projects Section */
-    #projects {
-      padding: 4rem 2rem;
-      background: #f3f4f6;
-      text-align: center;
-    }
-    .projects-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .project-card {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .project-card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .project-card .btn {
-      margin-top: 0.5rem;
-      display: inline-block;
-      background: #4f46e5;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-    }
+    #projects { padding: 4rem 2rem; background: #f3f4f6; text-align: center; }
+    .projects-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
+    .project-card { background: white; padding: 1rem; border-radius: 10px; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .project-card img { width: 100%; border-radius: 10px; }
+    .project-card .btn { margin-top: 0.5rem; display: inline-block; background: #4f46e5; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; }
 
-    /* Contact Section */
-    #contact {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    #contact-form input, #contact-form textarea {
-      width: 100%;
-      max-width: 500px;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    #contact-form button {
-      background: #4f46e5;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+    #contact { padding: 4rem 2rem; text-align: center; }
+    #contact-form input, #contact-form textarea { width: 100%; max-width: 500px; padding: 0.5rem; margin: 0.5rem 0; border-radius: 5px; border: 1px solid #ccc; }
+    #contact-form button { background: #4f46e5; color: white; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; }
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #1f2937;
-      color: white;
-      margin-top: 2rem;
-    }
+    footer { text-align: center; padding: 2rem; background: #1f2937; color: white; margin-top: 2rem; }
 
-    /* Responsive */
     @media (max-width: 768px) {
       nav ul { flex-direction: column; }
       #about { flex-direction: column; }
       .projects-container { flex-direction: column; align-items: center; }
     }
   </style>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Virginia Nyambura",
+      "url": "https://<Virginiamwega>.github.io/portfolio/",
+      "sameAs": [
+        "https://www.linkedin.com/in/<Virginia Mwega>/",
+        "https://github.com/<Virginiamwega>/"
+      ],
+      "jobTitle": "Web Developer & SEO Engineer",
+      "image": "https://Virginia portrait /200",
+      "description": "Virginia Nyambura is a  Web developer and SEO engineer passionate about responsive design and SEO optimization."
+    }
+  </script>
 </head>
 <body>
+
   <!-- Header -->
   <header>
     <nav>
-      <h1 class="logo">Virginia Nyambura</h1>
+      <h1 class="logo">Virginia Nymbura</h1>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -156,36 +91,36 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
-      <h2>Hello! I'm Virginia Nyambura</h2>
-      <p>Web Developer & SEO Specialist</p>
+      <h1>Hello! I'm Virginia NyAmbura</h1>
+      <p>Web Developer & SEO Engineer</p>
       <a href="#projects" class="btn">See My Work</a>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
     <div class="about-content">
-      <img src="https://via.placeholder.com/200" alt="Virginia Nyambura">
-      <p>I'm an SEO engineer and web developer passionate about creating optimized and responsive websites. I enjoy combining coding skills with seo knowledge ranking websites, driving growth and turning clicks into customers.</p>
+      <img src="https://via.placeholder.com/200" alt="Virginia Nyambura portrait">
+      <p>I'm an SEO engineer and web developer passionate about creating optimized and responsive websites. I combine coding skills with SEO to improve website visibility and performance.</p>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects">
     <h2>My Projects</h2>
     <div class="projects-container">
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+        <img src="https://Virginia Portrait/300x200" alt="Project 1 screenshot">
         <h3>Project 1</h3>
         <p>Description of project 1. Tools used: HTML, CSS, JavaScript.</p>
         <a href="#" class="btn">View Project</a>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+        <img src="https://project screenshot/300x200" alt="Project 2 screenshot">
         <h3>Project 2</h3>
         <p>Description of project 2. Tools used: HTML, CSS, JavaScript.</p>
         <a href="#" class="btn">View Project</a>
@@ -193,7 +128,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contact-form">
@@ -206,20 +141,27 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Virginia Nymbura. All Rights Reserved.</p>
+    <p>&copy; 2026 Virginia Nyambura. All Rights Reserved.</p>
   </footer>
 
+  <!-- JavaScript -->
   <script>
-    // Contact Form Alert
     const form = document.getElementById("contact-form");
-    form.addEventListener("submit", function(e) {
+    form.addEventListener("submit", function(e){
       e.preventDefault();
       alert("Thank you! Your message has been sent.");
       form.reset();
     });
   </script>
+
 </body>
 </html>
+
+   
+      
+
+   
+
 
       
  
